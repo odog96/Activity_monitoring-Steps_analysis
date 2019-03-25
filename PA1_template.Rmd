@@ -2,7 +2,9 @@
 title: "Step Activity Analysis"
 author: "Oliver Zarate"
 date: "March 23, 2019"
-output: html_document
+output: 
+  html_document: 
+    keep_md: yes
 ---
 
 ```{r setup, include=FALSE}
@@ -20,8 +22,8 @@ We break up the analysis and look at the following components as shown in each o
 suppressPackageStartupMessages(library(tidyverse))
 suppressPackageStartupMessages(library(ggplot2))
 #data injestion
-setwd("C:/Users/k126563/Documents/Data Science/Johns Hopkins/Reproducible Research/Week2")
-steps = read.csv("activity.csv") 
+ setwd("~/Data Science/Johns Hopkins DS Specialization/05_ReproducibleResearch/week 2 project")
+ steps = read.csv("activity.csv") 
 ```
 
 ## Daily Activity - Histogram, Mean, and Median
